@@ -7,7 +7,7 @@ name = "Efficient-VAD"
 dynamic = ["version"]
 requires-python = ">=3.8"
 dependencies = ["numpy>=1.22.0", "onnxruntime>=1.11.0"]
-description = "An efficient multilingugal vocie activity detector."
+description = "An efficient multilingual vocie activity detector."
 authors = [
     { name = "Muhammad Abd Al-sattar", email = "muhammadabdalsattar@gmail.com" },
 ]
