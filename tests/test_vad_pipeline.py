@@ -41,4 +41,3 @@ def test_init_with_explicit_paths():
     except Exception as e:
         pytest.fail(f"Initialization with explicit paths failed: {e}")
 
-# Note: No need for 'if __name__ == "__main__":' with pytest
