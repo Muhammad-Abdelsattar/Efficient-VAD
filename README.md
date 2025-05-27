@@ -17,19 +17,17 @@ You can install this package directly from GitHub or by cloning the repository a
 If you have Git installed, you can install the package directly from this repository using pip:
 
 ```bash
-pip install git+https://github.com/<USERNAME>/<REPONAME>.git
+pip install git+https://github.com/Muhammad-Abdelsattar/Efficient-VAD.git
 ```
-*Replace `<USERNAME>/<REPONAME>` with the actual GitHub username and repository name.*
 
 **From local source:**
 
 First, clone this repository:
 
 ```bash
-git clone https://github.com/<USERNAME>/<REPONAME>.git
-cd <REPONAME>
+git clone https://github.com/Muhammad-Abdelsattar/Efficient-VAD.git eff_vad
+cd eff_vad
 ```
-*Replace `<USERNAME>/<REPONAME>` with the actual GitHub username and repository name.*
 
 Then, install the package using pip:
 
@@ -159,10 +157,9 @@ This VAD system uses two models in the ONNX (Open Neural Network Exchange) forma
 
 The models are located in the `eff_vad/artifcats/` directory.
 
-## Contributing
-
-Contributions are welcome! If you'd like to contribute, please feel free to fork the repository, make your changes, and submit a pull request. You can also open an issue if you find a bug or have a feature request.
 
 ## License
 
-This project does not currently have a license. It is recommended to add a `LICENSE` file to define how others can use, modify, and distribute the code. Common open-source licenses include MIT, Apache 2.0, and GPL.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE.md) file for details.
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
