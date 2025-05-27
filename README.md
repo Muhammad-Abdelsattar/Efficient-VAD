@@ -17,19 +17,17 @@ You can install this package directly from GitHub or by cloning the repository a
 If you have Git installed, you can install the package directly from this repository using pip:
 
 ```bash
-pip install git+https://github.com/<USERNAME>/<REPONAME>.git
+pip install git+https://github.com/Muhammad-Abdelsattar/Efficient-VAD.git
 ```
-*Replace `<USERNAME>/<REPONAME>` with the actual GitHub username and repository name.*
 
 **From local source:**
 
 First, clone this repository:
 
 ```bash
-git clone https://github.com/<USERNAME>/<REPONAME>.git
-cd <REPONAME>
+git clone https://github.com/Muhammad-Abdelsattar/Efficient-VAD.git eff_vad
+cd eff_vad
 ```
-*Replace `<USERNAME>/<REPONAME>` with the actual GitHub username and repository name.*
 
 Then, install the package using pip:
 
@@ -64,14 +62,14 @@ The `VADPipeline` requires the following parameters:
 Example initialization:
 
 ```python
-# Define paths to the ONNX models (assuming they are in the expected location)
-preprocessor_path = "eff_vad/artifcats/preprocessor.onnx"
-vad_model_path = "eff_vad/artifcats/vad_ml.onnx"
+# Define paths to the ONNX models (if you change their default localtions).
+# preprocessor_path = "eff_vad/artifcats/preprocessor.onnx"
+# vad_model_path = "eff_vad/artifcats/vad_ml.onnx"
 
 # Initialize the VAD pipeline
 pipeline = VADPipeline(
-    preprocessor_model_path=preprocessor_path,
-    vad_model_path=vad_model_path,
+    # preprocessor_model_path=preprocessor_path,
+    # vad_model_path=vad_model_path,
     confidence_threshold=0.5,
     chunk_size=480  # Corresponds to 30ms chunks at 16kHz (0.030s * 16000 Hz = 480 samples)
 )
