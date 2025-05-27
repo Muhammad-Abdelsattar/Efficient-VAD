@@ -1,12 +1,19 @@
 import numpy as np
+import os
 from .components import *
 
 class VADPipeline:
     def __init__(self,
-                 preprocessor_model_path:str,
-                 vad_model_path:str,
-                 confidence_threshold:float,
-                 chunk_size:int):
+                 confidence_threshold: float,
+                 chunk_size: int,
+                 preprocessor_model_path: str = None,
+                 vad_model_path: str = None):
+        
+        base_dir = os.path.dirname(__file__)
+        if preprocessor_model_path is None:
+            preprocessor_model_path = os.path.join(base_dir, "artifcats", "preprocessor.onnx")
+        if vad_model_path is None:
+            vad_model_path = os.path.join(base_dir, "artifcats", "vad_ml.onnx")
         
         self.preprocessor = Featurizer(model_path=preprocessor_model_path)
         self.vad = VAD(model_path=vad_model_path,
