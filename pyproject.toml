@@ -11,3 +11,11 @@ description = "An efficient multilingual vocie activity detector."
 authors = [
     { name = "Muhammad Abd Al-sattar", email = "muhammadabdalsattar@gmail.com" },
 ]
+
+[project.optional-dependencies]
+test = [
+    "pytest>=7.0.0",
+]
+
+[tool.setuptools.package-data]
+"eff_vad" = ["artifcats/*.onnx"]
